@@ -3,173 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Ezequiel Pablo Ortiz</title>
+    <title>CV | Ezequiel Pablo Ortiz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --light-gray: #f4f4f4;
-            --text-color: #333;
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--light-gray);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            background: #fff;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        /* --- Barra Lateral --- */
-        .sidebar {
-            width: 35%;
-            background: var(--primary-color);
-            color: #fff;
-            padding: 40px 30px;
-            box-sizing: border-box;
-        }
-
-        .sidebar h1 {
-            font-size: 2.5em;
-            margin: 0;
-            line-height: 1.2;
-        }
-
-        .sidebar h2 {
-            font-size: 1.2em;
-            font-weight: 400;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-        
-        .sidebar-section {
-            margin-top: 30px;
-        }
-
-        .sidebar-section h3 {
-            color: var(--secondary-color);
-            font-size: 1.1em;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 10px;
-        }
-        
-        .sidebar a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .sidebar a:hover {
-            text-decoration: underline;
-        }
-
-        /* --- Contenido Principal --- */
-        .main-content {
-            width: 65%;
-            padding: 40px 30px;
-            box-sizing: border-box;
-        }
-
-        .main-content h2 {
-            color: var(--primary-color);
-            border-bottom: 3px solid var(--secondary-color);
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
-        .job, .education-item {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .job:last-child, .education-item:last-child {
-            border-bottom: none;
-        }
-
-
-        .job-title {
-            font-size: 1.3em;
-            font-weight: 700;
-            color: var(--secondary-color);
-            margin: 0;
-        }
-
-        .job-company, .education-institution {
-            font-size: 1.1em;
-            font-weight: 700;
-            margin: 5px 0;
-        }
-
-        .job-date, .education-date {
-            font-style: italic;
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .job-description {
-            padding-left: 20px;
-        }
-        
-        /* --- Estilos para progresión de carrera --- */
-        .job-progression-item {
-            margin-top: 20px;
-            margin-left: 15px;
-            padding-left: 15px;
-            border-left: 2px solid #e0e0e0;
-        }
-
-        .progression-title {
-            font-size: 1.1em;
-            font-weight: 700;
-            color: #333; /* Un color ligeramente menos fuerte que el principal */
-            margin: 0 0 5px 0;
-        }
-
-        /* --- Responsive Design --- */
-        @media (max-width: 800px) {
-            .container {
-                flex-direction: column;
-                margin: 0;
-            }
-            .sidebar, .main-content {
-                width: 100%;
-                padding: 20px;
-            }
-        }
+        :root { --primary-color: #2c3e50; --secondary-color: #3498db; --light-gray: #f4f4f4; --text-color: #333; --border-color: #e0e0e0; }
+        body { font-family: 'Lato', sans-serif; margin: 0; padding: 0; background-color: var(--light-gray); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 40px auto; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; }
+        .sidebar { width: 35%; background: var(--primary-color); color: #fff; padding: 40px 30px; box-sizing: border-box; }
+        .sidebar h1 { font-size: 2.5em; margin: 0; line-height: 1.2; }
+        .sidebar h2 { font-size: 1.2em; font-weight: 400; border-bottom: 2px solid var(--secondary-color); padding-bottom: 10px; margin-top: 0; }
+        .sidebar-section { margin-top: 25px; }
+        .sidebar-section h3 { color: var(--secondary-color); font-size: 1.1em; margin-bottom: 10px; text-transform: uppercase; }
+        .sidebar ul { list-style: none; padding: 0; margin-top: 5px; }
+        .sidebar ul li { margin-bottom: 8px; font-size: 0.95em; }
+        .sidebar a { color: #fff; text-decoration: none; }
+        .sidebar a:hover { text-decoration: underline; }
+        .sidebar .aptitudes-title { margin-bottom: 5px; font-weight: 700; color: #fff; text-transform: none; font-size: 1em; margin-top: 15px; }
+        .main-content { width: 65%; padding: 40px 30px; box-sizing: border-box; }
+        .main-content h2 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; margin-top: 0; }
+        .job, .education-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); }
+        .job:last-child, .education-item:last-child { border-bottom: none; }
+        .job-title { font-size: 1.3em; font-weight: 700; color: var(--secondary-color); margin: 0; }
+        .job-company, .education-institution { font-size: 1.1em; font-weight: 700; margin: 5px 0; }
+        .job-date, .education-date { font-style: italic; color: #777; margin-bottom: 10px; }
+        .job-description { padding-left: 20px; }
+        .timeline-job { display: flex; gap: 20px; }
+        .timeline-logo { width: 55px; flex-shrink: 0; margin-top: 5px; }
+        .timeline-logo img { width: 100%; height: auto; border-radius: 4px; }
+        .timeline-content { flex-grow: 1; }
+        .timeline-roles { position: relative; margin-top: 15px; padding-left: 25px; border-left: 2px solid var(--border-color); }
+        .timeline-role-item { position: relative; margin-bottom: 25px; }
+        .timeline-role-item:last-child { margin-bottom: 5px; }
+        .timeline-role-item::before { content: ''; position: absolute; top: 6px; left: -32.5px; width: 9px; height: 9px; background-color: white; border: 2px solid var(--secondary-color); border-radius: 50%; z-index: 1; }
+        .progression-title { font-size: 1.1em; font-weight: 700; color: #333; margin: 0 0 5px 0; }
+        @media (max-width: 800px) { .container { flex-direction: column; margin: 0; } .sidebar, .main-content { width: 100%; padding: 20px; } }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- ================== BARRA LATERAL (SIDEBAR) ================== -->
         <aside class="sidebar">
             <header>
                 <h1>Ezequiel Pablo ORTIZ</h1>
-                <h2>Técnico Superior en sistemas informáticos</h2>
+                <h2>Técnico Superior en Sistemas</h2>
             </header>
-
             <section class="sidebar-section">
                 <h3>Contacto</h3>
                 <ul>
@@ -179,127 +57,129 @@
                     <li>📞 +54 11 54904235</li>
                 </ul>
             </section>
-            
             <section class="sidebar-section">
-                <h3>Resumen Profesional</h3>
-                <p>Soporte técnico nivel 2 | Analista de operaciones Jr. | DevOps Jr. | Analista de sistemas | Analista funcional Jr.</p>
-            </section>
-
-            <section class="sidebar-section">
-                <h3>Aptitudes</h3>
+                <h3>Datos Personales</h3>
                 <ul>
-                    <li><strong>Metodologías ágiles:</strong> Lean, SCRUM</li>
-                    <li>Resolución de problemas y Análisis causa raíz</li>
-                    <li>Liderazgo y gestión de equipos</li>
-                    <li><strong>Lenguajes de programación:</strong> JAVA, .NET (C++, C#, Visualbasic.NET), SQL, Python</li>
+                    <li>35 años</li>
+                    <li>Argentino</li>
+                    <li>Soltero</li>
                 </ul>
             </section>
-
+            <section class="sidebar-section">
+                <h3>Resumen</h3>
+                <p style="font-size: 0.95em;">Profesional de TI con más de 10 años de trayectoria evolucionando desde el soporte técnico a roles de operaciones y análisis de sistemas. Me apasiona la resolución de problemas complejos y la optimización de flujos de trabajo mediante la automatización. Mi objetivo es aportar valor en un rol de Operaciones de TI o DevOps Jr., implementando soluciones eficientes que garanticen la estabilidad y escalabilidad de los sistemas.</p>
+            </section>
+            <section class="sidebar-section">
+                <h3>Competencias Técnicas</h3>
+                <p class="aptitudes-title">Lenguajes y BBDD:</p>
+                <ul><li>Python, SQL, JAVA, .NET (C++, C#), MySQL, PL/SQL</li></ul>
+                <p class="aptitudes-title">Automatización y DevOps:</p>
+                <ul><li>Google App Script, Make (Integromat), Bash, Git, GitHub</li></ul>
+                <p class="aptitudes-title">Operaciones y Soporte:</p>
+                <ul><li>Linux, SSH, Postman, JIRA, Trello, Salesforce, Zendesk</li></ul>
+                <p class="aptitudes-title">Metodologías:</p>
+                <ul><li>SCRUM, Lean, Análisis Causa Raíz</li></ul>
+            </section>
             <section class="sidebar-section">
                 <h3>Idiomas</h3>
                 <ul>
-                    <li><strong>Inglés:</strong> MCER B1+ (ICANA)</li>
+                    <li><strong>Inglés:</strong> B1+ (ICANA)</li>
                     <li><strong>Portugués:</strong> B1 (Casa do Brasil)</li>
                 </ul>
             </section>
-            
             <section class="sidebar-section">
-                <h3>Cursos</h3>
-                <ul>
-                     <li><strong>Educación IT:</strong> Negociación y comunicación efectiva, Liderazgo y gestión de equipos.</li>
-                     <li><strong>LinkedIn Learning:</strong> Metodologías ágiles y pensamiento de diseño, Especialista de servicio al cliente, Especialista de soporte IT.</li>
-                     <li><strong>EANT:</strong> Introducción a Arduino.</li>
-                </ul>
+                <h3>Cursos Realizados</h3>
+                 <p class="aptitudes-title">Educación IT:</p>
+                <ul><li>Negociación y Comunicación Efectiva</li><li>Liderazgo y Gestión de Equipos</li></ul>
+                 <p class="aptitudes-title">LinkedIn Learning:</p>
+                <ul><li>Metodologías Ágiles y Pensamiento de Diseño</li><li>Especialista en Servicio al Cliente y Soporte IT</li></ul>
+                 <p class="aptitudes-title">EANT:</p>
+                <ul><li>Introducción a Arduino</li></ul>
             </section>
         </aside>
-
-        <!-- ================== CONTENIDO PRINCIPAL ================== -->
         <main class="main-content">
             <section>
                 <h2>Experiencia Profesional</h2>
-                
                 <article class="job">
                     <h3 class="job-title">Analista de Operaciones de Servicio</h3>
-                    <p class="job-company">GOIntegro-Edenred, CABA</p>
+                    <p class="job-company">GO Integro, CABA</p>
                     <p class="job-date">Noviembre de 2022 - Presente</p>
                     <ul class="job-description">
-                        <li><strong>Automatización:</strong> Relevamiento de casos de uso y automatizaciones con Google App Script, Github y Make (ex Integromat).</li>
-                        <li><strong>Chabot:</strong> Diseño de workflows para atendimiento eficiente las consultas de usuarios y leads.</li>
-                        <li><strong>Salesforce:</strong> Soporte de segundo nivel para clientes a través de RQ's.</li>
-                        <li><strong>MySQL:</strong> Administración de backend, configuración de plataformas y gestión de usuarios.</li>
-                        
+                        <li>Desarrollo de automatizaciones para procesos masivos y generación de reportes con Google App Script, GitHub y Make.</li>
+                        <li>Soporte de segundo nivel sobre Salesforce, resolviendo requerimientos de clientes internos y externos.</li>
+                        <li>Administración de backend de clientes en MySQL, gestionando configuraciones y permisos de usuarios.</li>
                     </ul>
                 </article>
-
                 <article class="job">
-                    <h3 class="job-title">Ejecutivo de atención al cliente</h3>
+                    <h3 class="job-title">Ejecutivo de Atención al Cliente</h3>
                     <p class="job-company">Mitto, San Miguel, Buenos Aires</p>
                     <p class="job-date">Marzo de 2021 - Mayo de 2022</p>
-                    <p>Soporte técnico de SMS corporativo para empresas B2B en español e inglés, utilizando Zendesk.</p>
+                    <ul class="job-description">
+                        <li>Soporte técnico multilingüe (español e inglés) para servicios B2B de SMS corporativos, utilizando Zendesk para la gestión de tickets.</li>
+                    </ul>
                 </article>
-                
-                <article class="job">
-                    <h3 class="job-title">Wavy (ahora Sinch)</h3>
-                    <p class="job-company">Palermo, Buenos Aires</p>
-                    <p class="job-date">Febrero de 2017 - Febrero de 2021 (Total)</p>
-                    
-                    <div class="job-progression-item">
-                        <h4 class="progression-title">Analista de servicio al Cliente</h4>
-                        <p class="job-date">Febrero de 2018 - Febrero de 2021</p>
-                        <ul class="job-description">
-                            <li><strong>SCRUM:</strong> Lideré actividades ceremoniales para el equipo de Nivel 2.</li>
-                            <li><strong>SQUAD Whats-app:</strong> Miembro del escuadrón para investigar, prevenir problemas y mejorar procesos de resolución de API con Postman.</li>
-                            <li>Comunicación en español, inglés avanzado y portugués para LATAM.</li>
-                        </ul>
-                    </div>
-            
-                    <div class="job-progression-item">
-                        <h4 class="progression-title">Analista de operaciones Cono Sur Jr.</h4>
-                        <p class="job-date">Febrero de 2017 - Febrero de 2018</p>
-                        <p>Análisis de requerimientos, automatización y simplificación de tareas. Uso de Linux, Bash, SSH, MySQL. Gestión en JIRA + SCRUM.</p>
+                <article class="job timeline-job">
+                    <div class="timeline-logo"><img src="https://logowik.com/content/uploads/images/sinch-new-2022-black3359.jpg" alt="Sinch Logo"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Wavy Global (now Sinch LatAm)</h3>
+                        <p class="job-company">Palermo, Buenos Aires</p>
+                        <p class="job-date">Duración total: 4 años y 2 meses</p>
+                        <div class="timeline-roles">
+                            <div class="timeline-role-item">
+                                <h4 class="progression-title">Customer Service Analyst Level 2</h4>
+                                <p class="job-date">Febrero de 2018 – Marzo de 2021</p>
+                                <p>Lideré ceremonias SCRUM para el equipo de Nivel 2. Como miembro de la SQUAD de WhatsApp, diagnostiqué problemas de API con Postman, mejorando la estabilidad del canal y la documentación técnica.</p>
+                            </div>
+                            <div class="timeline-role-item">
+                                <h4 class="progression-title">Analista de Operaciones Junior (Cono Sur)</h4>
+                                <p class="job-date">Febrero de 2017 – Febrero de 2018</p>
+                                <p>Automaticé tareas mediante scripts en Bash (Linux). Gestioné el ciclo de vida de problemas de soporte técnico para plataformas B2C con JIRA, analizando requerimientos y simplificando procesos.</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
-
                 <article class="job">
-                    <h3 class="job-title">Mesa de ayuda Nivel 2</h3>
+                    <h3 class="job-title">Mesa de Ayuda Nivel 2</h3>
                     <p class="job-company">Makro Hiper mayorista, Munro, Buenos Aires</p>
                     <p class="job-date">Octubre de 2015 - Septiembre de 2016</p>
-                    <p>Gestión de tickets, incidencias y resolución. Soporte técnico en sitio/remoto a usuarios finales/VIP. Control de procesos, uso de scripts en PL-SQL/Linux, Telefonía IP y virtualización.</p>
+                    <ul class="job-description">
+                        <li>Gestioné tickets, incidencias y resolución de problemas. Brindé soporte técnico en sitio y remoto a usuarios finales y VIP, incluyendo guardias pasivas.</li>
+                        <li>Controlé procesos y utilicé scripts en PL-SQL/Linux. Administré telefonía IP, virtualización de SO y activos.</li>
+                    </ul>
                 </article>
-
-                <article class="job">
-                    <h3 class="job-title">Soporte técnico nivel 2</h3>
+                 <article class="job">
+                    <h3 class="job-title">Soporte Técnico Nivel 2</h3>
                     <p class="job-company">Volkswagen Argentina, Gral. Pacheco, Tigre</p>
                     <p class="job-date">Septiembre de 2013 - Octubre de 2015</p>
-                    <p>Soporte técnico de segundo nivel, auditoría de incidencias, troubleshooting y documentación vía WIKI. Virtualización de SO y soporte a usuarios finales y VIP.</p>
+                     <ul class="job-description">
+                        <li>Realicé auditorías de incidencias y generé documentación de troubleshooting y procedimientos vía WIKI.</li>
+                         <li>Gestioné la virtualización personalizada de SO Windows y di soporte a aplicaciones propias del cliente para usuarios finales y VIP.</li>
+                    </ul>
                 </article>
-
                 <article class="job">
-                    <h3 class="job-title">Soporte técnico</h3>
+                    <h3 class="job-title">Soporte Técnico</h3>
                     <p class="job-company">KENAZ, C.A.B.A, Buenos Aires</p>
                     <p class="job-date">Marzo de 2012 - Junio de 2013</p>
-                    <p>Soporte técnico en sitio y remoto con gestión de tickets vía Spiceworks. Seguimiento de infraestructura, configuración de equipos y publicación de artículos en WordPress.</p>
+                     <ul class="job-description">
+                        <li>Brindé soporte técnico en sitio y remoto a usuarios VIP, con gestión de tickets vía Spiceworks y seguimiento de infraestructura.</li>
+                         <li>Configuré y mantuve equipos (sobremesa/portátiles) y dispositivos móviles vía TeamViewer.</li>
+                    </ul>
                 </article>
-
             </section>
-
             <section>
-                <h2>Educación Universitaria</h2>
-
+                <h2>Educación</h2>
                 <article class="education-item">
-                    <h3 class="job-title">Técnico Superior en sistemas Informáticos</h3>
+                    <h3 class="job-title">Técnico Superior en Sistemas Informáticos</h3>
                     <p class="education-institution">Universidad Tecnológica Nacional (UTN), Gral. Pacheco-Tigre</p>
                     <p class="education-date">Marzo de 2013 - Marzo de 2017</p>
                 </article>
-                
                 <article class="education-item">
-                    <h3 class="job-title">Técnico Superior en programación</h3>
+                    <h3 class="job-title">Técnico Superior en Programación</h3>
                     <p class="education-institution">Universidad Tecnológica Nacional (UTN), Gral. Pacheco-Tigre</p>
                     <p class="education-date">Marzo de 2008 - Marzo de 2012</p>
                 </article>
             </section>
         </main>
     </div>
-
 </body>
-</html>
+</html>```
