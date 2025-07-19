@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ezequiel Pablo Ortiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script> <!-- Opcional: Para íconos, puedes usar un kit de FontAwesome o SVGs -->
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-gray: #f4f4f4;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* --- Barra Lateral --- */
+        .sidebar {
+            width: 35%;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 40px 30px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h1 {
+            font-size: 2.5em;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            font-weight: 400;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .sidebar-section {
+            margin-top: 30px;
+        }
+
+        .sidebar-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Contenido Principal --- */
+        .main-content {
+            width: 65%;
+            padding: 40px 30px;
+            box-sizing: border-box;
+        }
+
+        .main-content h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .job, .education-item {
+            margin-bottom: 30px;
+        }
+
+        .job-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+
+        .job-company, .education-institution {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+
+        .job-date, .education-date {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .job-description {
+            padding-left: 20px;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                margin: 0;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ================== BARRA LATERAL (SIDEBAR) ================== -->
+        <aside class="sidebar">
+            <header>
+                <h1>Ezequiel Pablo ORTIZ</h1>
+                <h2>Técnico Superior en sistemas informáticos</h2>
+            </header>
+
+            <section class="sidebar-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>📧 <a href="mailto:eportiz1@gmail.com">eportiz1@gmail.com</a></li>
+                    <li>📍 Buenos Aires, C.A.B.A, Floresta</li>
+                    <li>🔗 <a href="https://linkedin.com/in/ezequielportiz" target="_blank">linkedin.com/in/ezequielportiz</a></li>
+                    <li>📞 +54 11 54904235</li>
+                </ul>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Resumen Profesional</h3>
+                <p>Soporte técnico nivel 2 | Analista de operaciones Jr. | DevOps Jr. | Analista de sistemas | Analista funcional Jr.</p>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Aptitudes</h3>
+                <ul>
+                    <li><strong>Metodologías ágiles:</strong> Lean, SCRUM</li>
+                    <li>Resolución de problemas y Análisis causa raíz</li>
+                    <li>Liderazgo y gestión de equipos</li>
+                    <li><strong>Lenguajes de programación:</strong> JAVA, .NET (C++, C#, Visualbasic.NET), SQL, Python</li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li><strong>Inglés:</strong> MCER B1+ (ICANA)</li>
+                    <li><strong>Portugués:</strong> B1 (Casa do Brasil)</li>
+                </ul>
+            </section>
+            
+            <section class="sidebar-section">
+                <h3>Cursos</h3>
+                <ul>
+                     <li><strong>Educación IT:</strong> Negociación y comunicación efectiva, Liderazgo y gestión de equipos.</li>
+                     <li><strong>LinkedIn Learning:</strong> Metodologías ágiles y pensamiento de diseño, Especialista de servicio al cliente, Especialista de soporte IT.</li>
+                     <li><strong>EANT:</strong> Introducción a Arduino.</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- ================== CONTENIDO PRINCIPAL ================== -->
+        <main class="main-content">
+            <section>
+                <h2>Experiencia Profesional</h2>
+                
+                <article class="job">
+                    <h3 class="job-title">Analista de Operaciones de Servicio</h3>
+                    <p class="job-company">GO Integro, CABA</p>
+                    <p class="job-date">Noviembre de 2022 - Presente</p>
+                    <ul class="job-description">
+                        <li><strong>Salesforce:</strong> Soporte de segundo nivel para clientes a través de RQ's.</li>
+                        <li><strong>MySQL:</strong> Administración de backend, configuración de plataformas y gestión de usuarios.</li>
+                        <li><strong>Automatización:</strong> Relevamiento de casos de uso y automatizaciones con Google App Script, Github y Make (ex Integromat).</li>
+                    </ul>
+                </article>
+
+                <article class="job">
+                    <h3 class="job-title">Ejecutivo de atención al cliente</h3>
+                    <p class="job-company">Mitto, San Miguel, Buenos Aires</p>
+                    <p class="job-date">Marzo de 2021 - Mayo de 2022</p>
+                    <p>Soporte técnico de SMS corporativo para empresas B2B en español e inglés, utilizando Zendesk.</p>
+                </article>
+                
+                <article class="job">
+                    <h3 class="job-title">Analista de servicio al Cliente</h3>
+                    <p class="job-company">Wavy (ahora Sinch), Palermo, Buenos Aires</p>
+                    <p class="job-date">Febrero de 2018 - Febrero de 2021</p>
+                    <ul class="job-description">
+                        <li><strong>SCRUM:</strong> Lideré actividades ceremoniales para el equipo de Nivel 2.</li>
+                        <li><strong>SQUAD Whats-app:</strong> Miembro del escuadrón para investigar, prevenir problemas y mejorar procesos de resolución de API con Postman.</li>
+                        <li>Comunicación en español, inglés avanzado y portugués para LATAM.</li>
+                    </ul>
+                </article>
+                
+                 <article class="job">
+                    <h3 class="job-title">Analista de operaciones Cono Sur Jr.</h3>
+                    <p class="job-company">Wavy (ahora Sinch), Palermo, Buenos Aires</p>
+                    <p class="job-date">Febrero de 2017 - Febrero de 2018</p>
+                     <p>Análisis de requerimientos, automatización y simplificación de tareas. Uso de Linux, Bash, SSH, MySQL. Gestión en JIRA + SCRUM.</p>
+                </article>
+                
+                <!-- Agregar aquí el resto de las experiencias laborales siguiendo el mismo formato <article class="job"> -->
+
+            </section>
+
+            <section>
+                <h2>Educación Universitaria</h2>
+
+                <article class="education-item">
+                    <h3 class="job-title">Técnico Superior en sistemas Informáticos</h3>
+                    <p class="education-institution">Universidad Tecnológica Nacional (UTN), Gral. Pacheco-Tigre</p>
+                    <p class="education-date">Marzo de 2013 - Marzo de 2017</p>
+                </article>
+                
+                <article class="education-item">
+                    <h3 class="job-title">Técnico Superior en programación</h3>
+                    <p class="education-institution">Universidad Tecnológica Nacional (UTN), Gral. Pacheco-Tigre</p>
+                    <p class="education-date">Marzo de 2008 - Marzo de 2012</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
