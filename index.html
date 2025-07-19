@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script> <!-- Opcional: Para íconos, puedes usar un kit de FontAwesome o SVGs -->
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -102,7 +101,13 @@
 
         .job, .education-item {
             margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
+        .job:last-child, .education-item:last-child {
+            border-bottom: none;
+        }
+
 
         .job-title {
             font-size: 1.3em;
@@ -127,6 +132,21 @@
             padding-left: 20px;
         }
         
+        /* --- Estilos para progresión de carrera --- */
+        .job-progression-item {
+            margin-top: 20px;
+            margin-left: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #e0e0e0;
+        }
+
+        .progression-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #333; /* Un color ligeramente menos fuerte que el principal */
+            margin: 0 0 5px 0;
+        }
+
         /* --- Responsive Design --- */
         @media (max-width: 800px) {
             .container {
@@ -217,24 +237,47 @@
                 </article>
                 
                 <article class="job">
-                    <h3 class="job-title">Analista de servicio al Cliente</h3>
-                    <p class="job-company">Wavy (ahora Sinch), Palermo, Buenos Aires</p>
-                    <p class="job-date">Febrero de 2018 - Febrero de 2021</p>
-                    <ul class="job-description">
-                        <li><strong>SCRUM:</strong> Lideré actividades ceremoniales para el equipo de Nivel 2.</li>
-                        <li><strong>SQUAD Whats-app:</strong> Miembro del escuadrón para investigar, prevenir problemas y mejorar procesos de resolución de API con Postman.</li>
-                        <li>Comunicación en español, inglés avanzado y portugués para LATAM.</li>
-                    </ul>
+                    <h3 class="job-title">Progresión de Carrera en Wavy (ahora Sinch)</h3>
+                    <p class="job-company">Palermo, Buenos Aires</p>
+                    <p class="job-date">Febrero de 2017 - Febrero de 2021 (Total)</p>
+                    
+                    <div class="job-progression-item">
+                        <h4 class="progression-title">Analista de servicio al Cliente</h4>
+                        <p class="job-date">Febrero de 2018 - Febrero de 2021</p>
+                        <ul class="job-description">
+                            <li><strong>SCRUM:</strong> Lideré actividades ceremoniales para el equipo de Nivel 2.</li>
+                            <li><strong>SQUAD Whats-app:</strong> Miembro del escuadrón para investigar, prevenir problemas y mejorar procesos de resolución de API con Postman.</li>
+                            <li>Comunicación en español, inglés avanzado y portugués para LATAM.</li>
+                        </ul>
+                    </div>
+            
+                    <div class="job-progression-item">
+                        <h4 class="progression-title">Analista de operaciones Cono Sur Jr.</h4>
+                        <p class="job-date">Febrero de 2017 - Febrero de 2018</p>
+                        <p>Análisis de requerimientos, automatización y simplificación de tareas. Uso de Linux, Bash, SSH, MySQL. Gestión en JIRA + SCRUM.</p>
+                    </div>
                 </article>
-                
-                 <article class="job">
-                    <h3 class="job-title">Analista de operaciones Cono Sur Jr.</h3>
-                    <p class="job-company">Wavy (ahora Sinch), Palermo, Buenos Aires</p>
-                    <p class="job-date">Febrero de 2017 - Febrero de 2018</p>
-                     <p>Análisis de requerimientos, automatización y simplificación de tareas. Uso de Linux, Bash, SSH, MySQL. Gestión en JIRA + SCRUM.</p>
+
+                <article class="job">
+                    <h3 class="job-title">Mesa de ayuda Nivel 2</h3>
+                    <p class="job-company">Makro Hiper mayorista, Munro, Buenos Aires</p>
+                    <p class="job-date">Octubre de 2015 - Septiembre de 2016</p>
+                    <p>Gestión de tickets, incidencias y resolución. Soporte técnico en sitio/remoto a usuarios finales/VIP. Control de procesos, uso de scripts en PL-SQL/Linux, Telefonía IP y virtualización.</p>
                 </article>
-                
-                <!-- Agregar aquí el resto de las experiencias laborales siguiendo el mismo formato <article class="job"> -->
+
+                <article class="job">
+                    <h3 class="job-title">Soporte técnico nivel 2</h3>
+                    <p class="job-company">Volkswagen Argentina, Gral. Pacheco, Tigre</p>
+                    <p class="job-date">Septiembre de 2013 - Octubre de 2015</p>
+                    <p>Soporte técnico de segundo nivel, auditoría de incidencias, troubleshooting y documentación vía WIKI. Virtualización de SO y soporte a usuarios finales y VIP.</p>
+                </article>
+
+                <article class="job">
+                    <h3 class="job-title">Soporte técnico</h3>
+                    <p class="job-company">KENAZ, C.A.B.A, Buenos Aires</p>
+                    <p class="job-date">Marzo de 2012 - Junio de 2013</p>
+                    <p>Soporte técnico en sitio y remoto con gestión de tickets vía Spiceworks. Seguimiento de infraestructura, configuración de equipos y publicación de artículos en WordPress.</p>
+                </article>
 
             </section>
 
